@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
     <Identity Name="io.cordova.hellocordova" Publisher="CN=$username$" Version="0.0.1.0" />
     <Properties>
-        <DisplayName>HelloCordova</DisplayName>
+        <DisplayName>fff</DisplayName>
         <PublisherDisplayName>Apache Cordova Team</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
     </Properties>

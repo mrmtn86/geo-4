@@ -3,7 +3,7 @@
     <Identity Name="io.cordova.hellocordova" Publisher="CN=$username$" Version="0.0.1.0" />
     <mp:PhoneIdentity PhoneProductId="c1a72e70-e7c9-11e5-ba5e-396670d77a94" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
-        <DisplayName>HelloCordova</DisplayName>
+        <DisplayName>fff</DisplayName>
         <PublisherDisplayName>Apache Cordova Team</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
     </Properties>

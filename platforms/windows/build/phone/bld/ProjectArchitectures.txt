@@ -1,1 +1,0 @@
-C:\Users\mtn\Source\Repos\geo-4\platforms\windows\CordovaApp.Phone.jsproj;arm
