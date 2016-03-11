@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
     <SolutionConfiguration>debug|arm</SolutionConfiguration>
     <PackageArchitecture>arm</PackageArchitecture>
-    <PackageIdentityName>38126300-e7c9-11e5-9e10-4708608d3189</PackageIdentityName>
+    <PackageIdentityName>c1a72e70-e7c9-11e5-ba5e-396670d77a94</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\mtn\Source\Repos\geo-4\platforms\windows\build\phone\bld\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
@@ -92,11 +92,17 @@
     <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\js\winstore-jscompat.js">
+      <PackagePath>www\js\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\harita.html">
+      <PackagePath>www\harita.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mtn\Source\Repos\geo-4\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
