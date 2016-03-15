@@ -36,4 +36,5 @@
     <allow-intent href="itms-apps:*" />
   </platform>
   <preference name="windows-target-version" value="10.0" />
+  <plugin name="cordova-plugin-geolocation" version="2.1.0" />
 </widget>

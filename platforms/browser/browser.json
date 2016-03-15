@@ -23,6 +23,9 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
         }
     },
     "dependent_plugins": {},
@@ -44,6 +47,7 @@
     ],
     "plugin_metadata": {
         "cordova-plugin-whitelist": "1.2.1",
-        "cordova-plugin-device": "1.1.1"
+        "cordova-plugin-device": "1.1.1",
+        "cordova-plugin-geolocation": "2.1.0"
     }
 }

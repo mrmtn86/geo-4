@@ -2,28 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval';
-          script-src 'self' 'unsafe-inline' 'unsafe-eval' https://maps.googleapis.com/;
-          media-src *;
-          img-src *;
-          font-src  https://fonts.gstatic.com/ *;
-          style-src 'unsafe-inline' *">
-    <script type="text/javascript" src="js/winstore-jscompat.js"></script>
-  
-</head>
-<body>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWwxqBtwp1qFHy3VuVV166TaCdP3-d7I&callback=initMap"
+     
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWwxqBtwp1qFHy3VuVV166TaCdP3-d7I"
             async defer></script>
+    <script type="text/javascript" src="js/harita.js"></script>
+</head>
+
+<body>
+   
     <div id='map' style="position:absolute; width:400px; height:400px;"></div>
-    <script>
-        var map;
-        function initMap() {
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
-            });
-            console.log(map);
-        }
-    </script> 
+    
 </body>
 </html>

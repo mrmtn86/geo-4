@@ -12,6 +12,9 @@
         },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "fff"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "fff"
         }
     },
     "dependent_plugins": {}

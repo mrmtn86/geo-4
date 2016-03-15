@@ -16,8 +16,13 @@ www\css\index.css
 www\harita.html
 www\img\logo.png
 www\index.html
+www\js\harita.js
 www\js\index.js
-www\js\winstore-jscompat.js
 www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js
 www\plugins\cordova-plugin-device\www\device.js
+www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js
+www\plugins\cordova-plugin-geolocation\www\Coordinates.js
+www\plugins\cordova-plugin-geolocation\www\geolocation.js
+www\plugins\cordova-plugin-geolocation\www\Position.js
+www\plugins\cordova-plugin-geolocation\www\PositionError.js
 www\WinJS\js\base.js
