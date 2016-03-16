@@ -1,8 +1,6 @@
 ﻿var map;
 var markers = [];
 function initMap() {
-   
-
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
             var cihazPozisyon = {
@@ -23,11 +21,6 @@ function initMap() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
-
-    //var map = new google.maps.Map(document.getElementById('map'), {
-    //    center: { lat: -34.397, lng: 150.644 },
-    //    zoom: 8
-    //});
     console.log(map);
 }
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
