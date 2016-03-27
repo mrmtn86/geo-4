@@ -1,0 +1,27 @@
+﻿<xapCache source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23.03.2016 22:25:46">
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\obj\Debug\io.cordova.hellocordova.dll" archivePath="io.cordova.hellocordova.dll" lastWriteTime="23.03.2016 22:25:46" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\config.xml" archivePath="config.xml" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\cordova-js-src\exec.js" archivePath="www\cordova-js-src\exec.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\cordova-js-src\platform.js" archivePath="www\cordova-js-src\platform.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\cordova.js" archivePath="www\cordova.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\cordova_plugins.js" archivePath="www\cordova_plugins.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\css\index.css" archivePath="www\css\index.css" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\harita.html" archivePath="www\harita.html" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\img\logo.png" archivePath="www\img\logo.png" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\index.html" archivePath="www\index.html" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\js\harita.js" archivePath="www\js\harita.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\js\index.js" archivePath="www\js\index.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\www\plugins\cordova-plugin-device\www\device.js" archivePath="www\plugins\cordova-plugin-device\www\device.js" lastWriteTime="23.03.2016 22:25:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.back.rest.png" archivePath="Images\appbar.back.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.close.rest.png" archivePath="Images\appbar.close.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.feature.video.rest.png" archivePath="Images\appbar.feature.video.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.next.rest.png" archivePath="Images\appbar.next.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.save.rest.png" archivePath="Images\appbar.save.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Images\appbar.stop.rest.png" archivePath="Images\appbar.stop.rest.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\VERSION" archivePath="VERSION" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="23.03.2016 22:21:54" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="23.03.2016 22:21:45" />
+  <file source="C:\Users\mtn\IdeaProjects\geo-4\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="23.03.2016 22:21:54" />
+</xapCache>
