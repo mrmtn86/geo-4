@@ -69,5 +69,5 @@ module.exports = {
 };
 
 // Native watchPosition method is called async after permissions prompt.
-// So we use additional map and own ids to return watch id synchronously.
+// So we use additional harita and own ids to return watch id synchronously.
 var pluginToNativeWatchMap = {};

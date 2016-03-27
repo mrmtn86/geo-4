@@ -16,87 +16,97 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var map;
+
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         this.bindEvents();
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
+    bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-          map =  document.getElementById('haritaFrameId').contentWindow.harita();
-          map.cihazinYerinigoster();
-         yerTakipEt();
-    } 
-   
+    onDeviceReady: function () {
+        cihaziharitadaGoster();
+        yerTakipEt();
+        sistemdekiKullanicilariGoster();
+    }
 };
+
+function tekrarliIslem(metod) {
+
+    var cagirilmaSayisi = 1;
+
+    var tekrarEt  = function () {
+        var metodBasariliCalisti = metod();
+
+        if(!metodBasariliCalisti){
+            var delay = 100 * cagirilmaSayisi * cagirilmaSayisi;
+            ++cagirilmaSayisi;
+            console.log("tekrarli islem deneme sayisi : " + cagirilmaSayisi + " beklenecek sure :  " + delay + " ms");
+            setTimeout(tekrarEt, delay);
+        }
+    };
+    tekrarEt();
+}
+
+
+function cihaziharitadaGoster() {
+    var goster = function () {
+        harita =  document.getElementById('haritaFrameId').contentWindow.harita();
+        return harita != undefined;
+    };
+    tekrarliIslem(goster);
+}
+
+var harita;
+function sistemdekiKullanicilariGoster() {
+    var result = httpGet("hello/" + sessionIdGetir());
+    cihazlariGuncelle(result);
+}
+
+function cihazlariGuncelle(json) {
+    var letters = "";
+
+  var telefonlar = json.telefonList;
+    for (var i = 0; i < telefonlar.length; i++) {
+        letters += "<button onclick=elemanGetir('" + telefonlar[i].sessionId + "')>" + telefonlar[i].label + "</button>";
+    }
+    document.getElementById("telefonlar").innerHTML = letters;
+}
+
+var takipEdilenTelefon;
+
+function elemanGetir(telefonId) {
+    takipEdilenTelefon = telefonId;
+    setInterval(myTimer, 5000);
+}
+
+
+function myTimer() {
+
+    var telefon = httpGet("hello/telefon-bilgisi-getir/" + takipEdilenTelefon);
+    console.log("eleman getir telefoon " + telefon.telefonId);
+
+    harita.yerGuncelle(telefon);
+}
+
+
+function yerGonder() {
+    harita.yerBildir();
+}
+
 
 function yerTakipEt() {
-
-    if (map == undefined) {
-        setInterval(yerTakipEt, 1000);
-        console.log("map yok");
-
-        return;
-    }
-    var options = { maximumAge: 0, timeout: 10000, enableHighAccuracy: true };
-    navigator.geolocation.watchPosition(yerBlgisiBsariliGuncellendi, yerTakipEdilememeDurumu, options);
+    var deviceInfo = device.platform + " - " + device.model;
+    harita.yerTakipEt();
 }
-
-function yerTakipEdilememeDurumu(error) {
-    alert(" yer biildirilemedi" + error);
-}
-
- 
-
-var yerBlgisiBsariliGuncellendi = function (position) {
-
-    var coords = position.coords;
-    var latitudeYeni = coords.latitude;
-
-    var longitudeYeni = coords.longitude;
-    var yatayDeger = latitudeYeni - coords.latitude;
-    var sapmaDegeri = 0.00001;
-    var yatayDegisimis = -sapmaDegeri < yatayDeger && yatayDeger < sapmaDegeri;
-    var dikeyDeger = longitudeYeni - coords.longitude;
-    var dikeyDegisimis = -sapmaDegeri < dikeyDeger && dikeyDeger < sapmaDegeri;
-    //if (!(coords && yatayDegisimis && dikeyDegisimis)) {
-    //
-    //    console.log("kordinat deðiþmedi");
-    //    return;
-    //}
-    var cihazPozisyon = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-    };
-    map.cihazPozisyonGuncelle(cihazPozisyon);
-  //  console.log("kordinat deðiþti");
-    positionGen = position;
-    var label = device.platform + " - " + device.model;
-    // construct an HTTP request
-    var data = {
-        latitude: latitudeYeni,
-        longitude: longitudeYeni,
-        altitude: position.coords.altitude,
-        accuracy: position.coords.accuracy,
-        altitudeAccuracy: position.coords.altitudeAccuracy,
-        speed: position.coords.speed,
-   
-        telefonLabel: label
-    };
-
-   // var json = httpPost("hello/lokasyon/guncelle", data);
-    //cihazlariGuncelle(json);
-};
 
 app.initialize();
