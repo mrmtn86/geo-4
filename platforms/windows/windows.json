@@ -18,13 +18,13 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "HelloCordova"
-        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "fff"
         },
         "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "fff"
+        },
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "fff"
         }
     },

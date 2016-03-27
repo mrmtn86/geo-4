@@ -1,0 +1,1 @@
+C:\Users\mtn\IdeaProjects\geo-4\platforms\windows\CordovaApp.Windows10.jsproj;neutral
