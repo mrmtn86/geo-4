@@ -26,7 +26,7 @@
 
 
     this.yerTakipEt = function () {
-        var options = {maximumAge: 0, timeout: 10000, enableHighAccuracy: true};
+        var options = {maximumAge: 0, timeout: 20000, enableHighAccuracy: true};
 
         navigator.geolocation.watchPosition(cihazinPozisyonDegisti, yerTakipEdilememeDurumu, options);
     };
@@ -82,7 +82,7 @@
 
     function yerTakipEdilememeDurumu(error) {
         handleLocationError('yer takip edilemiyor', infoWindow, map.getCenter());
-        console.log(error);
+        console.log(error.message);
     }
 
     function cihazinPozisyonDegisti(position) {
